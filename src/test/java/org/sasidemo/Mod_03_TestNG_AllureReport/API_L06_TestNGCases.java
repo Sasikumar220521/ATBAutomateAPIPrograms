@@ -1,5 +1,6 @@
 package org.sasidemo.Mod_03_TestNG_AllureReport;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 
@@ -12,7 +13,7 @@ public class API_L06_TestNGCases {
         pincode = "560037";
         RestAssured
                 .given().baseUri("https://zippopotam.us")
-                .basePath("/IN/" + pincode)
+                .basePath("/IN/" + pincode).filter(new AllureRestAssured())
                 .when().get()
                 .then().log().all().statusCode(200);
 
@@ -24,7 +25,7 @@ public class API_L06_TestNGCases {
         pincode = "@";
         RestAssured
                 .given().baseUri("https://zippopotam.us")
-                .basePath("/IN/" + pincode)
+                .basePath("/IN/" + pincode).filter(new AllureRestAssured())
                 .when().get()
                 .then().log().all().statusCode(200);
 
@@ -36,7 +37,7 @@ public class API_L06_TestNGCases {
         pincode = " ";
         RestAssured
                 .given().baseUri("https://zippopotam.us")
-                .basePath("/IN/" + pincode)
+                .basePath("/IN/" + pincode).filter(new AllureRestAssured())
                 .when().get()
                 .then().log().all().statusCode(200);
 

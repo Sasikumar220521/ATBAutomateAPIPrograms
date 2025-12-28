@@ -7,5 +7,6 @@ public class HelloWorld {
         RestAssured.given().baseUri("https://google.com").log().all()
                 .when().get()
                 .then().statusCode(200).log().all();
+        
     }
 }

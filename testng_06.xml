@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite TC06">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/sasik/Documents/Java_backup/AutomationNewIJ/ATBAutomateAPIPrograms">
+        <classes>
+            <class name="org.sasidemo.Mod_03_TestNG_AllureReport.API_L06_TestNGCases">
+                <methods>
+                    <include name="testGetPositive_TC1"/>
+                    <include name="testGetNegative_TC2"/>
+                    <include name="testGetNegative_TC3"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

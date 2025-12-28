@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/sasik/Documents/Java_backup/AutomationNewIJ/ATBAutomateAPIPrograms">
+        <classes>
+            <class name="org.sasidemo.Mod_03_TestNG_AllureReport.API_P07_EmptyTestNGCases">
+<!--                If no method tag and Testcases not included then it will run all cases in class-->
+<!--                <methods>-->
+<!--                    <include name="test_01"/>-->
+<!--                    <include name="test_02"/>-->
+<!--                    <include name="test_03"/>-->
+<!--                </methods>-->
+            </class>
+            <class name="org.sasidemo.Mod_03_TestNG_AllureReport.API_L06_TestNGCases">
+
+            </class>
+        </classes>
+    </test>
+</suite>
